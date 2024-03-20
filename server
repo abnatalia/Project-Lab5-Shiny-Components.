@@ -104,8 +104,8 @@ shinyServer(function(input, output){
     
     })
     
-    #city_weather_bike_df$BIKE_PREDICTION <- as.integer(city_weather_bike_df$BIKE_PREDICTION)
-    #city_weather_bike_df$HUMIDITY <- as.integer(city_weather_bike_df$HUMIDITY)
+    city_weather_bike_df$BIKE_PREDICTION <- as.integer(city_weather_bike_df$BIKE_PREDICTION)
+    city_weather_bike_df$HUMIDITY <- as.integer(city_weather_bike_df$HUMIDITY)
     output$humidity_pred_chart <- renderPlot({
       ggplot(
         subset(city_weather_bike_df, CITY_ASCII == input$city_dropdown),
