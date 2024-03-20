@@ -19,7 +19,7 @@ shinyUI(
       selectInput(
         inputId = 'city_dropdown',
         label = 'Cities',
-        choices = c('all', 'Seoul', 'New York', 'Paris', 'London', 'Suzhou')
+        choices = c('All', 'Seoul', 'New York', 'Paris', 'London', 'Suzhou')
       ),
       plotOutput('temp_line', width = 575, height = 250),
       plotOutput('bike_line', click = 'plot_click', width = 575, height = 250),
